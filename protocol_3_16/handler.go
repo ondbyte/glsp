@@ -9,6 +9,7 @@ import (
 )
 
 type Handler struct {
+	CustomMethods map[string]func(context *glsp.Context, params json.RawMessage) error
 	// Base Protocol
 	CancelRequest CancelRequestFunc
 	Progress      ProgressFunc
@@ -708,6 +709,14 @@ func (self *Handler) Handle(context *glsp.Context) (r any, validMethod bool, val
 				validParams = true
 				r, err = self.TextDocumentMoniker(context, &params)
 			}
+		}
+	}
+
+	if m, ok := self.CustomMethods[context.Method]; ok {
+		err = m(context, context.Params)
+		if err == nil {
+			validMethod = true
+			validParams = true
 		}
 	}
 
