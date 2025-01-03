@@ -4,8 +4,8 @@ GLSP
 ====
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Go Reference](https://pkg.go.dev/badge/github.com/tliron/glsp.svg)](https://pkg.go.dev/github.com/tliron/kutglspil)
-[![Go Report Card](https://goreportcard.com/badge/github.com/tliron/glsp)](https://goreportcard.com/report/github.com/tliron/glsp)
+[![Go Reference](https://pkg.go.dev/badge/github.com/ondbyte/glsp.svg)](https://pkg.go.dev/github.com/ondbyte/kutglspil)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ondbyte/glsp)](https://goreportcard.com/report/github.com/ondbyte/glsp)
 
 [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) SDK for Go.
 
@@ -19,7 +19,7 @@ All you need to do, then, is provide the features for the language you want to s
 
 Projects using GLSP:
 
-* [Puccini TOSCA Language Server](https://github.com/tliron/puccini-language-server)
+* [Puccini TOSCA Language Server](https://github.com/ondbyte/puccini-language-server)
 * [zk](https://github.com/mickael-menu/zk)
 
 
@@ -36,9 +36,9 @@ Minimal Example
 package main
 
 import (
-	"github.com/tliron/glsp"
-	protocol "github.com/tliron/glsp/protocol_3_16"
-	"github.com/tliron/glsp/server"
+	"github.com/ondbyte/glsp"
+	protocol "github.com/ondbyte/glsp/protocol_3_16"
+	"github.com/ondbyte/glsp/server"
 	"github.com/tliron/commonlog"
 
 	// Must include a backend implementation

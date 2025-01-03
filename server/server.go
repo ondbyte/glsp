@@ -3,8 +3,8 @@ package server
 import (
 	"time"
 
+	"github.com/ondbyte/glsp"
 	"github.com/tliron/commonlog"
-	"github.com/tliron/glsp"
 )
 
 var DefaultTimeout = time.Minute

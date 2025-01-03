@@ -1,8 +1,8 @@
 package protocol
 
 import (
-	"github.com/tliron/glsp"
-	protocol316 "github.com/tliron/glsp/protocol_3_16"
+	"github.com/ondbyte/glsp"
+	protocol316 "github.com/ondbyte/glsp/protocol_3_16"
 )
 
 /**

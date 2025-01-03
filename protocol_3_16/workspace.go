@@ -1,6 +1,6 @@
 package protocol
 
-import "github.com/tliron/glsp"
+import "github.com/ondbyte/glsp"
 
 // https://microsoft.github.io/language-server-protocol/specifications/specification-3-16#workspace_workspaceFolders
 
